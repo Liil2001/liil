@@ -1,0 +1,217 @@
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+
+
+/*时间*/
+
+.nowTime {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: -10%;
+}
+
+
+/*立方体*/
+
+.cube {
+    background-color: rgba(255, 255, 255, .3);
+    position: relative;
+    margin-top: 250px;
+    width: 600px;
+    height: 600px;
+    transform-style: preserve-3d;
+    transform: rotateX(45deg) rotateZ(45deg);
+    animation: cube_rotate 3s infinite;
+}
+
+@keyframes cube_rotate {
+    0% {
+        transform: rotateX(45deg) rotateZ(45deg) rotatez(45deg);
+    }
+    25% {
+        transform: rotateX(45deg) rotateZ(45deg) rotatez(135deg);
+    }
+    50% {
+        transform: rotateX(45deg) rotateZ(45deg) rotatez(225deg);
+    }
+    75% {
+        transform: rotateX(45deg) rotateZ(45deg) rotatez(315deg);
+    }
+    100% {
+        transform: rotateX(45deg) rotateZ(45deg) rotatez(405deg);
+    }
+}
+
+.cube>div {
+    position: absolute;
+    border: 1px solid black;
+}
+
+.cube_left {
+    left: 150px;
+    top: 150px;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(53, 53, 56, 0.6);
+    transform: translateZ(150px) rotateY(90deg) translateZ(-150px);
+}
+
+.cube_right {
+    left: 150px;
+    top: 150px;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(53, 53, 56, 0.6);
+    transform: translateZ(150px) rotateY(90deg) translateZ(150px);
+}
+
+.cube_front {
+    left: 150px;
+    top: 150px;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(53, 53, 56, 0.6);
+    transform: translateZ(150px) rotateX(90deg) translateZ(-150px);
+}
+
+.cube_back {
+    left: 150px;
+    top: 150px;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(53, 53, 56, 0.6);
+    transform: translateZ(150px) rotateX(-90deg) translateZ(-150px);
+}
+
+.cube_top {
+    left: 150px;
+    top: 150px;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(53, 53, 56, 0.6);
+    transform: translateZ(150px) rotateY(180deg) translateZ(-150px);
+}
+
+.cube_bottom {
+    left: 150px;
+    top: 150px;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(53, 53, 56, 0.6);
+    transform: translateZ(150px) rotateY(90deg) translateZ(-150px);
+}
+
+.cube_left_s {
+    left: 225px;
+    top: 225px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0, 0, 250, 0.6);
+    transform: translateZ(150px) rotateY(90deg) translateX(75px) translateZ(-75px);
+}
+
+.cube_right_s {
+    left: 225px;
+    top: 225px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 0, 0, 0.6);
+    transform: translateZ(150px) rotateY(90deg) translateX(75px) translateZ(75px);
+}
+
+.cube_front_s {
+    left: 225px;
+    top: 225px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0, 255, 179, 0.6);
+    transform: translateZ(150px) rotateY(90deg) translateX(75px) rotateX(90deg) translateZ(75px);
+}
+
+.cube_back_s {
+    left: 225px;
+    top: 225px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0, 255, 42, 0.6);
+    transform: translateZ(150px) rotateY(90deg) translateX(75px) rotateX(90deg) translateZ(-75px);
+}
+
+.cube_top_s {
+    left: 225px;
+    top: 225px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 0, 128, 0.6);
+    transform: translateZ(150px);
+}
+
+.cube_bottom_s {
+    left: 225px;
+    top: 225px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(2, 0, 0, 1);
+}
+
+.cube_left_l {
+    left: 75px;
+    top: 75px;
+    width: 450px;
+    height: 450px;
+    background-color: rgba(0, 0, 250, 0.6);
+    transform: translateZ(450px) rotateY(90deg) translateX(225px) translateZ(-225px);
+}
+
+.cube_right_l {
+    left: 75px;
+    top: 75px;
+    width: 450px;
+    height: 450px;
+    background-color: rgba(255, 0, 0, 0.6);
+    transform: translateZ(450px) rotateY(90deg) translateX(225px) translateZ(225px);
+}
+
+.cube_front_l {
+    left: 75px;
+    top: 75px;
+    width: 450px;
+    height: 450px;
+    background-color: rgba(0, 255, 179, 0.6);
+    transform: translateZ(450px) rotateY(90deg) translateX(225px) rotateX(90deg) translateZ(225px);
+}
+
+.cube_back_l {
+    left: 75px;
+    top: 75px;
+    width: 450px;
+    height: 450px;
+    background-color: rgba(0, 255, 42, 0.6);
+    transform: translateZ(450px) rotateY(90deg) translateX(225px) rotateX(90deg) translateZ(-225px);
+}
+
+.cube_top_l {
+    left: 75px;
+    top: 75px;
+    width: 450px;
+    height: 450px;
+    background-color: rgba(255, 0, 128, 0.6);
+    transform: translateZ(450px);
+}
+
+.cube_b0ttom_l {
+    left: 75px;
+    top: 75px;
+    width: 450px;
+    height: 450px;
+    background-color: rgba(8, 8, 8, 0.6);
+    transform: translateZ(450px);
+}
