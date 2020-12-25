@@ -29,7 +29,7 @@
     height: 600px;
     transform-style: preserve-3d;
     transform: rotateX(45deg) rotateZ(45deg);
-    animation: cube_rotate 3s infinite;
+    animation: cube_rotate 3.5s infinite;
     animation-delay: 6.5s;
 }
 
