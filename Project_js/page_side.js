@@ -1,25 +1,25 @@
 //简单的网页效果
 //提示
-// var reminder = document.querySelector('.reminder');
-// reminder.addEventListener('selectstart', function(e) {
-//     e.preventDefault();
-// })
-// reminder.addEventListener('contextmenu', function(e) {
-//         e.preventDefault();
-//     })
-//     //提示5秒后消失
-// setTimeout(function() {
-//         reminder.style.display = 'none';
-//     }, 5000)
-//     //遮罩
-// var mask = document.querySelector('.mask');
-// //遮罩5秒后消失
-// setTimeout(function() {
-//     mask.style.display = 'none';
-// }, 5000)
-// if (mask.style.display == 'block') {
-//     document.removeEventListener('mousemove', mousePointer);
-// }
+var reminder = document.querySelector('.reminder');
+reminder.addEventListener('selectstart', function(e) {
+    e.preventDefault();
+})
+reminder.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    })
+    //提示5秒后消失
+setTimeout(function() {
+        reminder.style.display = 'none';
+    }, 5000)
+    //遮罩
+var mask = document.querySelector('.mask');
+//遮罩5秒后消失
+setTimeout(function() {
+    mask.style.display = 'none';
+}, 5000)
+if (mask.style.display == 'block') {
+    document.removeEventListener('mousemove', mousePointer);
+}
 //右侧边栏
 var flag = 0;
 var right_side = document.querySelector('.right_side');

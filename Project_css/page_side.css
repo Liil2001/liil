@@ -22,7 +22,7 @@
 }
 
 .reminder {
-    display: none;
+    display: block;
     position: absolute;
     width: 230px;
     height: 80px;
@@ -64,7 +64,7 @@
 }
 
 .mask {
-    display: none;
+    display: block;
     width: 100%;
     height: 100%;
     position: fixed;
