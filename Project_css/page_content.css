@@ -208,11 +208,17 @@
     transform: translateZ(450px);
 }
 
-.cube_b0ttom_l {
+.cube_bottom_l {
     left: 75px;
     top: 75px;
     width: 450px;
     height: 450px;
     background-color: rgba(8, 8, 8, 0.6);
     transform: translateZ(450px);
+}
+
+.cube_color_red,
+.cube_color_green,
+.cube_color_blue {
+    cursor: pointer;
 }

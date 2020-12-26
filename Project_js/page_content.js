@@ -55,10 +55,38 @@ cube_size_m.addEventListener('click', function() {
     cube_bottom.className = 'cube_bottom';
 })
 cube_size_l.addEventListener('click', function() {
-    cube_left.className = 'cube_left_l';
-    cube_right.className = 'cube_right_l';
-    cube_front.className = 'cube_front_l';
-    cube_back.className = 'cube_back_l';
-    cube_top.className = 'cube_top_l';
-    cube_bottom.className = 'cube_bottom_l';
+        cube_left.className = 'cube_left_l';
+        cube_right.className = 'cube_right_l';
+        cube_front.className = 'cube_front_l';
+        cube_back.className = 'cube_back_l';
+        cube_top.className = 'cube_top_l';
+        cube_bottom.className = 'cube_bottom_l';
+    })
+    //cube颜色
+var cube_color_red = document.querySelector('.cube_color_red');
+var cube_color_green = document.querySelector('.cube_color_green');
+var cube_color_blue = document.querySelector('.cube_color_blue');
+cube_color_red.addEventListener('click', function() {
+    cube_left.style.background = 'rgba(255,0,0,0.5)';
+    cube_right.style.background = 'rgba(255,0,0,0.5)';
+    cube_front.style.background = 'rgba(255,0,0,0.5)';
+    cube_back.style.background = 'rgba(255,0,0,0.5)';
+    cube_top.style.background = 'rgba(255,0,0,0.5)';
+    cube_bottom.style.background = 'rgba(255,0,0,0.5)';
+})
+cube_color_green.addEventListener('click', function() {
+    cube_left.style.background = 'rgba(0,255,0,0.5)';
+    cube_right.style.background = 'rgba(0,255,0,0.5)';
+    cube_front.style.background = 'rgba(0,255,0,0.5)';
+    cube_back.style.background = 'rgba(0,255,0,0.5)';
+    cube_top.style.background = 'rgba(0,255,0,0.5)';
+    cube_bottom.style.background = 'rgba(0,255,0,0.5)';
+})
+cube_color_blue.addEventListener('click', function() {
+    cube_left.style.background = 'rgba(0,0,255,0.5)';
+    cube_right.style.background = 'rgba(0,0,255,0.5)';
+    cube_front.style.background = 'rgba(0,0,255,0.5)';
+    cube_back.style.background = 'rgba(0,0,255,0.5)';
+    cube_top.style.background = 'rgba(0,0,255,0.5)';
+    cube_bottom.style.background = 'rgba(0,0,255,0.5)';
 })
