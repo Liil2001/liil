@@ -1,3 +1,7 @@
+var flag = 0;
+
+
+
 //简单的网页效果
 //提示
 var reminder = document.querySelector('.reminder');
@@ -21,7 +25,6 @@ if (mask.style.display == 'block') {
     document.removeEventListener('mousemove', mousePointer);
 }
 //右侧边栏
-var flag = 0;
 var right_side = document.querySelector('.right_side');
 var right_side_back = document.querySelector('.back_right');
 var left_side = document.querySelector('.left_side');
@@ -83,3 +86,22 @@ BackGroundColor_c.addEventListener('click', function() {
 var PageLocation = right_side.querySelector('.PageLocation');
 var PageLocation_con = PageLocation.querySelector('span');
 PageLocation_con.innerHTML = '<span style="font-size:0.5px">' + document.location.href + '</span>';
+
+//左边栏 cube旋转
+var cube_rotate = document.querySelector('.cube_rotate_down');
+var cube_rotate_nexts = document.querySelectorAll('.cube_rotate_next');
+cube_rotate.addEventListener('click', function() {
+    if (flag == 0) {
+        for (var i = 0; i < cube_rotate_nexts.length; i++) {
+            cube_rotate_nexts[i].style.display = 'block';
+            this.className = 'cube_rotate_up';
+            flag = 1;
+        }
+    } else {
+        for (var i = 0; i < cube_rotate_nexts.length; i++) {
+            cube_rotate_nexts[i].style.display = 'none';
+            this.className = 'cube_rotate_down';
+            flag = 0;
+        }
+    }
+})

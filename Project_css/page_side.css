@@ -129,7 +129,7 @@
     font-weight: 900;
     line-height: 1.2;
     text-align: center;
-    z-index: 2;
+    z-index: 10;
 }
 
 .left .back_left {
@@ -142,6 +142,7 @@
 
 .left_side_con,
 .right_side_con {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
@@ -150,6 +151,7 @@
 .right_side_con li,
 .right_side_con li {
     margin-top: 5px;
+    position: relative;
 }
 
 .BackGroundColor.a,
@@ -179,4 +181,37 @@
 .cube_size_m,
 .cube_size_l {
     cursor: pointer;
+    font-weight: 900;
+}
+
+.cube_color_red,
+.cube_color_green,
+.cube_color_blue {
+    cursor: pointer;
+}
+
+.cube_rotate_down {
+    position: absolute;
+    display: block;
+    left: 40%;
+    top: 50px;
+    border: 8px solid transparent;
+    border-top: 8px dashed black;
+    cursor: pointer;
+}
+
+.cube_rotate_up {
+    position: absolute;
+    display: block;
+    left: 40%;
+    top: 43px;
+    border: 8px solid transparent;
+    border-bottom: 8px dashed black;
+    cursor: pointer;
+}
+
+.cube_rotate_next {
+    position: relative;
+    display: none;
+    margin: 5px 40px;
 }

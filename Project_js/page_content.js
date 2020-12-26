@@ -1,3 +1,12 @@
+//肯定
+var open_yes = document.querySelector('.open_yes');
+var yes = setTimeout(function() {
+    open_yes.addEventListener('click', function() {
+        yes.style.display = 'block';
+    })
+}, 3000)
+
+
 //时间
 var nowtTime = document.querySelector('.nowTime');
 var nowTime_time = document.querySelector('.nowTime_time');
